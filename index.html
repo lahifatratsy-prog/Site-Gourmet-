@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gourmet – Menu du restaurant</title>
+  <meta name="description" content="Découvrez le menu du restaurant Gourmet : viandes grillées, agneau, poulet et desserts. Appelez ou commandez sur WhatsApp.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23d90f0f'/%3E%3Ctext x='32' y='44' font-size='38' text-anchor='middle' fill='white' font-family='Georgia,serif' font-weight='700'%3EG%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="accueil">
+
+  <!-- Barre du haut -->
+  <div class="topbar">
+    <div class="wrap topbar__in">
+      <p class="topbar__hours">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        Lun–Ven : 8h–23h, Sam–Dim : 8h–00h
+      </p>
+      <a class="topbar__tel" href="tel:+261388486747">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+        +261 38 84 867 47
+      </a>
+    </div>
+  </div>
+
+  <!-- En-tête -->
+  <header class="head">
+    <div class="wrap head__in">
+      <a class="logo" href="#accueil" aria-label="Gourmet, retour en haut">
+        <span class="logo__name">Gourmet</span>
+        <span class="logo__sub">Restaurant</span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#accueil">Accueil</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="callbox" href="tel:+261388486747">
+        <span class="callbox__ring">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+        </span>
+        <span class="callbox__txt">
+          <small>Appelez pour commander</small>
+          <strong>+261 38 84 867 47</strong>
+        </span>
+      </a>
+
+      <a class="btn btn--red" id="orderOnline" href="https://wa.me/261388486747?text=Bonjour%2C%20je%20souhaite%20passer%20une%20commande%20chez%20Gourmet." target="_blank" rel="noopener">
+        Commander en ligne
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Bandeau de page -->
+    <section class="banner">
+      <h1>Menu</h1>
+      <p class="crumbs"><a href="#accueil">Accueil</a> <span aria-hidden="true">›</span> <span aria-current="page">Menu</span></p>
+    </section>
+
+    <!-- Carte -->
+    <section class="wrap menu" id="menu" aria-labelledby="menuTitle">
+      <h2 id="menuTitle" class="menu__title">Notre carte</h2>
+      <p class="menu__intro">Neuf plats préparés à la commande. Touchez la photo d’un plat pour voir tous ses ingrédients.</p>
+      <div class="grid" id="grid"></div>
+    </section>
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="foot" id="contact">
+    <div class="wrap foot__top">
+      <div class="foot__brand">
+        <a class="logo" href="#accueil" aria-label="Gourmet, retour en haut">
+          <span class="logo__name">Gourmet</span>
+          <span class="logo__sub">Restaurant</span>
+        </a>
+        <p>Des viandes grillées à la perfection, des garnitures de saison et un dessert pour finir en douceur.</p>
+        <p class="foot__book">Réserver une table<br><a href="tel:+261388486747">+261 38 84 867 47</a></p>
+        <p class="foot__book">Horaires d’ouverture<br><strong>Lun–Ven : 8h–23h<br>Sam–Dim : 8h–00h</strong></p>
+      </div>
+
+      <div class="foot__col">
+        <h3>Liens rapides</h3>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="foot__col">
+        <h3>Notre menu</h3>
+        <ul>
+          <li><a href="#menu">Bœuf</a></li>
+          <li><a href="#menu">Agneau</a></li>
+          <li><a href="#menu">Volaille</a></li>
+          <li><a href="#menu">Dessert</a></li>
+        </ul>
+      </div>
+
+      <div class="foot__col">
+        <h3>Nous contacter</h3>
+        <ul class="contact">
+          <li>
+            <span class="contact__ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <span>Lot IVG 12, Analakely<br>Antananarivo 101, Madagascar</span>
+          </li>
+          <li>
+            <span class="contact__ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+            <a href="tel:+261388486747">+261 38 84 867 47</a>
+          </li>
+          <li>
+            <span class="contact__ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4.2A8 8 0 1 1 8.4 18.7L4 20z"/></svg></span>
+            <a href="https://wa.me/261388486747" target="_blank" rel="noopener">WhatsApp</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot__bar">
+      <div class="wrap">
+        <p>© 2026 Gourmet. Restaurant fictif, site de démonstration. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fenêtre des ingrédients -->
+  <dialog id="dish" class="dish" aria-labelledby="dishName">
+    <div class="dish__in">
+      <button class="dish__close" id="dishClose" type="button" aria-label="Fermer">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <img class="dish__img" id="dishImg" src="" alt="">
+      <div class="dish__body">
+        <h3 id="dishName"></h3>
+        <p class="dish__price" id="dishPrice"></p>
+        <p class="dish__lead">Ingrédients</p>
+        <ul class="dish__list" id="dishList"></ul>
+        <div class="dish__actions">
+          <a class="btn btn--red" id="dishOrder" href="#" target="_blank" rel="noopener">Commander sur WhatsApp</a>
+          <a class="btn btn--line" href="tel:+261388486747">Appeler</a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
